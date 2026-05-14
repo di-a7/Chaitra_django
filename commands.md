@@ -27,3 +27,11 @@ python manage.py startapp app_name
 
 # run server
 python manage.py runserver
+
+# migration file create
+python manage.py makemigrations
+
+python manage.py migrate
+
+# create superuser
+python manage.py createsuperuser
