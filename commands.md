@@ -35,3 +35,31 @@ python manage.py migrate
 
 # create superuser
 python manage.py createsuperuser
+
+# shell
+python manage.py shell
+
+# CRUD : Create, Retrieve, Update, Delete
+# get all data
+model_name.objects.all()
+
+# create data
+model_name.objects.create(field1 = "...", field2 = "...", ....)
+
+# Retrieve: single data 
+a = model_name.objects.get(id = 1)
+a.field1
+a.field2
+
+# Update
+a.field1 = new_data
+a.field2 = new data
+a.field3 = new data
+a.save()
+
+# Delete:
+- retrieve a data
+- a.delete()
+
+# Filter
+model_name.objects.filter(field1= "...", field2 = "...", field3 = "...", ......)
