@@ -13,6 +13,7 @@
          <th scope="col">Ingredients</th>
          <th scope="col">Instruction</th>
          <th scope="col">Time</th>
+         <th scope="col">Actions</th>
       </tr>
    </thead>
    <tbody>
@@ -23,6 +24,9 @@
          <td>{{recipe.ingredient}}</td>
          <td>{{recipe.instruction}}</td>
          <td>{{recipe.time}}</td>
+         <td>
+            <a href=/receipe/{{recipe.id}}/ class="btn btn-success">Update</a>
+         </td>
       </tr>
       {% endfor %}
       
